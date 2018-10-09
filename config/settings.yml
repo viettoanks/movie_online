@@ -1,0 +1,20 @@
+category:
+  title:
+    max_length: 50
+user:
+  email:
+    max_length: 50
+    case_sensitive: false
+  phone:
+    max_length: 13
+  password:
+    min_length: 6
+person:
+  name:
+    min_length: 3
+    max_length: 50
+movie:
+  name:
+    max_length: 50
+  alternative_name:
+    max_length: 50
