@@ -1,1 +1,47 @@
 en:
+  helpers:
+    application_helper:
+      text: "Movie online"
+  layouts:
+    header:
+      home: "Home"
+      feature_film: "Feature film"
+      series: "Television series"
+      new_film: "New film"
+      hot_film: "Hot film"
+      action: "Action movie"
+      love: "Love film"
+      horror: "Horror movie"
+      swordplay: "Swordplay movie"
+      category: "Movie genre"
+      search: "Search"
+      login: "Login"
+      logout: "Logout"
+    footer:
+      new_film: "New film"
+      new_feature: "New feature film"
+      new_series: "New television series"
+      movie_theaters: "Movie theaters"
+      coming_soon: "Coming soon"
+      classic_film: "Classic film"
+      feature_film: "Feature film"
+      action: "Action movies"
+      love: "Love film"
+      horror: "Horror movies"
+      swordplay: "Swordplay movies"
+      cartoon: "Cartoon movies"
+      series: "Television series"
+      vietnam: "Vietnamese film"
+      korean: "National Korean film"
+      taiwan: "Taiwan movie"
+      chinese: "Chinese film"
+      american: "American film"
+      social: "Socical"
+  static_pages:
+    home:
+      previous: Previous
+      next: Next
+      feature: "Feature film"
+      series: "Television series"
+      new: "New film"
+      hot: "Hot film"   
