@@ -9,4 +9,7 @@ Rails.application.routes.draw do
     confirmations: "users/confirmations"
   }, path: "", path_names: {sign_in: "login", sign_out: "logout",
       sign_up: "signup", edit:"edit-profile"}
+  resources :movies, only: :show do
+    get "/ep-:order", to: "movies#show", as: :watch
+  end
 end
