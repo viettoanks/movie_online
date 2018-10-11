@@ -44,4 +44,10 @@ en:
       feature: "Feature film"
       series: "Television series"
       new: "New film"
-      hot: "Hot film"   
+      hot: "Hot film"
+  movies:
+    movies:
+      view: " view"
+  shares:
+    movies:
+      view: " view"
