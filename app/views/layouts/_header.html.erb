@@ -26,13 +26,12 @@
             movies_path(movie_type: Settings.header.movies_hot), class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
-          <%= link_to t(".category"), movies_path, class: "nav-link dropdown-toggle",
+          <%= link_to t(".category"), "", class: "nav-link dropdown-toggle",
             id: "navbardrop", data: {toggle: "dropdown"} %>
           <div class="dropdown-menu">
-            <%= link_to t(".action"), "#", class: "dropdown-item" %>
-            <%= link_to t(".love"), "#", class: "dropdown-item" %>
-            <%= link_to t(".horror"), "#", class: "dropdown-item" %>
-            <%= link_to t(".swordplay"), "#", class: "dropdown-item" %>
+            <% @all_category.each do |category| %>
+              <%= link_to category.title, category_path(category), class: "dropdown-item" %>
+            <% end %>
           </div>
         </li>
       </ul>
