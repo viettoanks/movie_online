@@ -116,3 +116,11 @@ en:
     index:
       previous: Previous
       next: Next
+  movies:
+    home:
+      home:
+      previous: Previous
+      next: Next
+      feature: "Feature film"
+      series: "Television series"
+      hot: "Hot film"
