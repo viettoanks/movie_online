@@ -7,7 +7,6 @@ en:
       home: "Home"
       feature_film: "Feature film"
       series: "Television series"
-      new_film: "New film"
       hot_film: "Hot film"
       action: "Action movie"
       love: "Love film"
@@ -39,14 +38,6 @@ en:
       chinese: "Chinese film"
       american: "American film"
       social: "Socical"
-  static_pages:
-    home:
-      previous: Previous
-      next: Next
-      feature: "Feature film"
-      series: "Television series"
-      new: "New film"
-      hot: "Hot film"
   movies:
     movies:
       view: " view"
@@ -116,3 +107,12 @@ en:
             link above and create a new one.</p>"
         link_below: "Someone has requested a link to change your password.
           You can do this through the link below."
+  movies:
+    home:
+      home:
+      feature: "Feature film"
+      series: "Television series"
+      hot: "Hot film"  
+    index:
+      previous: Previous
+      next: Next

@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 2018_10_12_084637) do
     t.string "alternative_name"
     t.timestamp "publish_date"
     t.string "country"
-    t.boolean "movie_type", default: false
+    t.integer "movie_type", default: 0
     t.string "trailer"
     t.string "poster"
     t.integer "view_count", default: 0
