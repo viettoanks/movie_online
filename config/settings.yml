@@ -18,3 +18,4 @@ movie:
     max_length: 50
   alternative_name:
     max_length: 50
+  relate_movies_quantity: 6

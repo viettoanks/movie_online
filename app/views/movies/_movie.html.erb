@@ -1,9 +1,11 @@
-<div class="col-md-2 mt-3 mb-3">
-  <div class="list-movie">
-    <%= image_tag("anh1.jpg", class:"image") %>
-    <div class="overlay">
-      <%= link_to movie.name, "#" %>
-      <p><%= movie.view_count %><%= t ".view" %></p>
+<%= link_to movie_path(movie) do %>
+  <div class="col-md-2 col-4 my-3 px-0">
+    <div class="list-movie">
+      <%= image_tag movie.poster, class: "image rounded" %>
+      <div class="overlay">
+        <%= link_to movie.name, movie_path(movie) %>
+        <p><%= movie.view_count %><%= t ".view" %></p>
+      </div>
     </div>
   </div>
-</div>
+<% end %>
