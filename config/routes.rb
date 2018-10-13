@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "static_pages#home"
+  root "movies#index"
   get "/home", to: "static_pages#home", as: :home
   get "/help", to: "static_pages#help", as: :help
   devise_for :users, controllers: {
@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :movies, only: :show do
     get "/ep-:order", to: "movies#show", as: :watch
   end
+  get "/list_movie", to: "movies#list_movie", as: :list_movie
+  resources :movies
 end

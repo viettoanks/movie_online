@@ -11,6 +11,9 @@ class Movie < ApplicationRecord
   has_many :bookmark_users, through: :movies_users, source: :user
   has_many :view_counts, dependent: :destroy
   has_many :episodes, dependent: :destroy
+  enum movie_type: {features: 0, series: 1, hots: 2}
+
+  scope :load_by_type, ->(type){where movie_type: type}
 
   validates :name, presence: true,
     length: {maximum: Settings.movie.name.max_length}

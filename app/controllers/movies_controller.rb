@@ -2,6 +2,11 @@ class MoviesController < ApplicationController
   before_action :find_movie, :find_relate_movies, :find_current_episode,
     :find_movie_episodes, only: :show
 
+  def index
+    @movie = Movie.first
+    @index ||= Supports::Movie.new(@movie)
+  end
+
   def show; end
 
   private

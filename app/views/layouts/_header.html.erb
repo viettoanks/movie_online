@@ -5,22 +5,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <%= link_to t(".home"), "#", class: "nav-link" %>
+          <%= link_to t(".home"), movies_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to t(".feature_film"), "#", class: "nav-link" %>
+          <%= link_to t(".feature_film"), 
+            list_movie_path(movie_type: Settings.header.movies_feature), class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to t(".series"), "#", class: "nav-link" %>
+          <%= link_to t(".series"),
+            list_movie_path(movie_type: Settings.header.movies_series), class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to t(".new_film"), "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to t(".hot_film"), "#", class: "nav-link" %>
+          <%= link_to t(".hot_film"),
+            list_movie_path(movie_type: Settings.header.movies_hot), class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
-          <%= link_to t(".category"), "#", class: "nav-link dropdown-toggle",
+          <%= link_to t(".category"), list_movie_path, class: "nav-link dropdown-toggle",
             id: "navbardrop", data: {toggle: "dropdown"} %>
           <div class="dropdown-menu">
             <%= link_to t(".action"), "#", class: "dropdown-item" %>
