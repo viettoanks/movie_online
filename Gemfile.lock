@@ -279,7 +279,6 @@ DEPENDENCIES
   devise
   ffaker
   figaro
-  faker
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
   kaminari

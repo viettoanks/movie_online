@@ -41,6 +41,24 @@ en:
   movies:
     movies:
       view: " view"
+    show:
+      pick-episode: "Pick Episode"
+      movie_not_found: "The movie doesn't exist"
+      relate_movies: "Relate Movies"
+      unknown: "Unknown"
+      actor: "Actor"
+      director: "Director"
+      publish_date: "Publish Date"
+      country: "Country"
+      category: "Category"
+    index:
+      previous: Previous
+      next: Next
+    home:
+      home:
+      feature: "Feature film"
+      series: "Television series"
+      hot: "Hot film" 
   shares:
     movies:
       view: " view"
@@ -107,20 +125,3 @@ en:
             link above and create a new one.</p>"
         link_below: "Someone has requested a link to change your password.
           You can do this through the link below."
-  movies:
-    home:
-      home:
-      feature: "Feature film"
-      series: "Television series"
-      hot: "Hot film"  
-    index:
-      previous: Previous
-      next: Next
-  movies:
-    home:
-      home:
-      previous: Previous
-      next: Next
-      feature: "Feature film"
-      series: "Television series"
-      hot: "Hot film"

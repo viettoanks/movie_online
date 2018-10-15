@@ -1,5 +1,7 @@
 {
   "name": "movie_online",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "plyr": "^3.4.4"
+  }
 }
