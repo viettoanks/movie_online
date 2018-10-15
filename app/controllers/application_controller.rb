@@ -1,12 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale
-  before_action :list_movie
-
-  def list_movie
-    @movies_list = Movie.where(movie_type: params[:movie_type])
-                        .page(params[:page])
-                        .per Settings.movies_controller.per_page
-  end
+  before_action :init_ransack
 
   private
 
@@ -16,5 +10,9 @@ class ApplicationController < ActionController::Base
 
   def default_url_options
     {locale: I18n.locale}
+  end
+
+  def init_ransack
+    @init_ransack ||= Movie.ransack params[:q]
   end
 end
