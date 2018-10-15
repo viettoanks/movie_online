@@ -125,3 +125,6 @@ en:
             link above and create a new one.</p>"
         link_below: "Someone has requested a link to change your password.
           You can do this through the link below."
+  fix_turbolinks:
+    alert:
+      search_alert: "Not empty"
