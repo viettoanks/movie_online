@@ -69,9 +69,9 @@ end
                  country: FFaker::Address.country,
                  description: FFaker::Lorem.paragraph
   3.times do |m|
-    MoviesPerson.create! person: p, movie: Movie.all.sample, role: true
+    MoviesPerson.create! person: p, movie: Movie.all.sample, role: 1
   end
   3.times do |m|
-    MoviesPerson.create! person: p, movie: Movie.all.sample, role: false
+    MoviesPerson.create! person: p, movie: Movie.all.sample, role: 0
   end
 end

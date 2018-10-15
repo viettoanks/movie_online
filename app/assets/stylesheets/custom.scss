@@ -164,7 +164,7 @@ html,body {
   opacity: 1;
 }
 
-.devise-link a{
+.devise-link a {
   text-decoration: none !important;
 }
 
@@ -182,16 +182,45 @@ html,body {
   height: 100%;
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 400px;
 }
 
-.list_movie{
+.list_movie {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.pagination{
+.pagination {
   justify-content: center !important;
+}
+
+.bookmark-link {
+  text-decoration: none !important;
+}
+
+.bookmark-item-link {
+  display: inline-block;
+  width: 100%;
+}
+
+.alert-alert {
+  background-color: $white-pink;
+  border-color: $light-pink;
+  color: $brown-red;
+  text-align: left;
+  ul {
+    list-style-type: none;
+  }
+}
+
+.alert-notice{
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: $weight-green;
+  text-align: left;
+  ul {
+    list-style-type: none;
+  }
 }

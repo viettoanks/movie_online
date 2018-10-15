@@ -20,6 +20,7 @@ en:
       logout: "Logout"
       edit_profile: "Edit profile"
       sign_up: "Sign Up"
+      bookmark: "Bookmark"
     footer:
       new_film: "New film"
       new_feature: "New feature film"
@@ -53,6 +54,9 @@ en:
       publish_date: "Publish Date"
       country: "Country"
       category: "Category"
+      close: "Close"
+      movie_category: "Category %{category}"
+      home: "Home"
     home:
       home:
       feature: "Feature film"
@@ -127,3 +131,7 @@ en:
   fix_turbolinks:
     alert:
       search_alert: "Not empty"
+  bookmarks:
+    index:
+      title: "Bookmarks"
+      head_text: "Bookmark Movies"

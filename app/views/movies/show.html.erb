@@ -42,7 +42,7 @@
     </div>
     <div class="col-md-9">
       <div class="movie-button float-right">
-        <% if current_user.bookmarked? @movie %>
+        <% if user_signed_in? && current_user.bookmarked?(@movie) %>
           <%= link_to movie_bookmarks_path(@movie), method: :delete,
           class: "btn btn-outline-primary", id: "bookmark" do %>
             <i class="fas fa-bookmark fa-2x"></i>
