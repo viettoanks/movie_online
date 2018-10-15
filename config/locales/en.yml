@@ -57,11 +57,23 @@ en:
       close: "Close"
       movie_category: "Category %{category}"
       home: "Home"
+      trailer: "Trailer"
+      close: "Close"
+      bookmark: "Bookmark"
+      unbookmark: "Unbookmark"
     home:
       home:
       feature: "Feature film"
       series: "Television series"
-      hot: "Hot film" 
+      hot: "Hot film"
+  persons:
+    show:
+      gender: "Gender"
+      birthday: "Birthday"
+      country: "Country"
+      description: "More info"
+      cast_movies: "Cast"
+      direct_movies: "Direct"
   shares:
     movies:
       view: " view"
@@ -135,3 +147,9 @@ en:
     index:
       title: "Bookmarks"
       head_text: "Bookmark Movies"
+  activerecord:
+    attributes:
+      person:
+        genders:
+          male: "Male"
+          female: "Female"

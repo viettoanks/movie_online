@@ -67,7 +67,8 @@ end
                  gender: [true, false].sample,
                  birthday: 25.year.ago - n.days,
                  country: FFaker::Address.country,
-                 description: FFaker::Lorem.paragraph
+                 description: FFaker::Lorem.paragraph,
+                 image: "anh1.jpg"
   3.times do |m|
     MoviesPerson.create! person: p, movie: Movie.all.sample, role: 1
   end

@@ -15,4 +15,5 @@ Rails.application.routes.draw do
     delete "/bookmarks", to: "bookmarks#destroy"
   end
   resources :movies
+  resources :persons, only: :show
 end

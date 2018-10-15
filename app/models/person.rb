@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
   enum role: {actor: 0, director: 1}
+  enum gender: {male: true, female: false}
 
   has_many :movies_people
   has_many :movies, through: :movies_people
@@ -17,6 +18,11 @@ class Person < ApplicationRecord
   class << self
     def movies_people
       MoviesPerson.arel_table
+    end
+
+    def human_enum_name _enum_name, enum_value
+      I18n.t "activerecord.attributes.#{model_name
+        .i18n_key}.#{enum_name.to_s.pluralize}.#{enum_value}"
     end
   end
 end
