@@ -26,6 +26,10 @@
 }(jQuery));
 
 $(document).on("turbolinks:load", function(){
+  FontAwesome.dom.watch({
+    autoReplaceSvgRoot: document,
+    observeMutationsRoot: document.body
+  })
   const player = new Plyr('#player');
   $('form#movie_search').on('submit', function(e){
     if ($("#q_name_or_alternative_name_cont").val() == ""){
