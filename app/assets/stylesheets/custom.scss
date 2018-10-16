@@ -224,3 +224,20 @@ html,body {
     list-style-type: none;
   }
 }
+
+.widget-body{
+  margin-left: 70px;
+}
+
+.social-share-button .ssb-icon {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 30px 32px !important;
+  display: inline-block !important;
+  height: 35px !important;
+  width: 40px !important;
+}
+.social-share-button {
+  right: 1px;
+  top: 0px;
+}

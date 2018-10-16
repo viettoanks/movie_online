@@ -101,6 +101,13 @@
         <%= @movie.description %>
       </p>
     </div>
+    <div class="widget">
+      <div class="widget-body">
+        <div class="beta-sales beta-lists">
+          <%= social_share_button_tag(@movie.name, desc: @movie.name) %>
+        </div>
+      </div>
+    </div>
   </div>
   <hr>
   <div class="fb-comments" data-href="<%= request.original_url %>"

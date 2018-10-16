@@ -7,6 +7,8 @@
 //= require i18n
 //= require i18n.js
 //= require i18n/translations
+//= require social-share-button
+//= require social-share-button/wechat
 //= require activestorage
 //= require turbolinks
 //= require_tree .
