@@ -3,8 +3,14 @@ class MoviesController < ApplicationController
     :find_movie_episodes, only: :show
 
   def index
-    @movie = Movie.first
-    @index ||= Supports::Movie.new(@movie)
+    if params[:q]
+      @movies_list = @init_ransack.result.page(params[:page])
+                                  .per Settings.movies_controller.per_page
+    else
+      @movies_list = Movie.where(movie_type: params[:movie_type])
+                          .page(params[:page])
+                          .per Settings.movies_controller.per_page
+    end
   end
 
   def show; end

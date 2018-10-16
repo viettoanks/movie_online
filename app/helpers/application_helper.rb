@@ -8,4 +8,11 @@ module ApplicationHelper
       page_title + " | " + base_title
     end
   end
+
+  def slide
+    [[t("helpers.application_helper.previous"),
+      "carousel-control-prev", "carousel-control-prev-icon", "prev"],
+      [t("helpers.application_helper.next"),
+      "carousel-control-next", "carousel-control-next-icon", "next"]]
+  end
 end
