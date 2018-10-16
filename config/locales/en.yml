@@ -2,6 +2,8 @@ en:
   helpers:
     application_helper:
       text: "Movie online"
+      previous: Previous
+      next: Next
   layouts:
     header:
       home: "Home"
@@ -51,9 +53,6 @@ en:
       publish_date: "Publish Date"
       country: "Country"
       category: "Category"
-    index:
-      previous: Previous
-      next: Next
     home:
       home:
       feature: "Feature film"
