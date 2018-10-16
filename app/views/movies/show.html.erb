@@ -67,30 +67,22 @@
           (<%= @movie.publish_date.year %>)
         </span>
       </div>
-      <div class="p-1">
-        <span><%= t ".director" %>:</span>
 
-        <% if @movie.directors_size.positive? %>
-          <%= safe_join @movie.directors.map { |director| 
-            link_to director.name, "#",
-            title: director.name}, ",".html_safe %>
-        <% else %>
-          <%= t ".unknown" %>
-        <% end %>
+      <% [:director, :actor].each do |person| %>
+        <div class="p-1">
+          <span><%= t ".#{person}" %>:</span>
 
-      </div>
-      <div class="p-1">
-        <span><%= t ".actor" %>:</span>
+          <% if @movie.send("#{person}s_size").positive? %>
+            <%= safe_join @movie.send("#{person}s").map { |p| 
+              link_to p.name, person_path(p),
+              title: p.name}, ",".html_safe %>
+          <% else %>
+            <%= t ".unknown" %>
+          <% end %>
 
-        <% if @movie.actors_size.positive? %>
-          <%= safe_join @movie.actors.map { |actor| 
-            link_to actor.name, "#",
-            title: actor.name}, ",".html_safe %>
-        <% else %>
-          <%= t ".unknown" %>
-        <% end %>
+        </div>
+      <% end %>
 
-      </div>
       <div class="p-1">
         <span><%= t ".category" %>:</span>
         <%= safe_join @movie.categories.map { |cate|

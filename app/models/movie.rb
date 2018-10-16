@@ -15,6 +15,7 @@ class Movie < ApplicationRecord
   enum movie_type: {features: 0, series: 1, hots: 2}
 
   scope :sort_by_bookmark_desc, ->{order movies_users[:created_at].desc}
+  scope :sort_by_publish, ->(type){order publish_date: type}
 
   validates :name, presence: true,
     length: {maximum: Settings.movie.name.max_length}
