@@ -153,3 +153,6 @@ en:
         genders:
           male: "Male"
           female: "Female"
+  categories:
+    show:
+      dont_find: "don't find"

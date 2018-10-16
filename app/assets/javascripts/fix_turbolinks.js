@@ -32,7 +32,7 @@ $(document).on("turbolinks:load", function(){
   })
   const player = new Plyr('#player');
   $('form#movie_search').on('submit', function(e){
-    if ($("#q_name_or_alternative_name_cont").val() == ""){
+    if ($("#q_name_or_alternative_name_or_actors_name_or_directors_name_cont").val() == ""){
       alert(I18n.t("fix_turbolinks.alert.search_alert"));
       return false;
     }
