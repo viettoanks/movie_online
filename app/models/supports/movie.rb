@@ -5,18 +5,10 @@ class Supports::Movie
     @movie ||= movie
   end
 
-  def features
-    @features ||= Movie.load_by_type(:features)
-                       .limit(Settings.movies_controller.number_movie)
-  end
-
-  def series
-    @series ||= Movie.load_by_type(:series)
-                     .limit(Settings.movies_controller.number_movie)
-  end
-
-  def hots
-    @hots ||= Movie.load_by_type(:hots)
-                   .limit(Settings.movies_controller.number_movie)
+  Movie.movie_types.keys.each do |type|
+    define_method type do
+      instance_variable_set "@#{type}",
+        Movie.send(type.to_s).limit(Settings.movies_controller.number_movie)
+    end
   end
 end

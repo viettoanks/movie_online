@@ -8,8 +8,11 @@ Rails.application.routes.draw do
     confirmations: "users/confirmations"
   }, path: "", path_names: {sign_in: "login", sign_out: "logout",
       sign_up: "signup", edit:"edit-profile"}
+  resources :bookmarks, only: :index
   resources :movies, only: :show do
     get "/ep-:order", to: "movies#show", as: :watch
+    resources :bookmarks, only: :create
+    delete "/bookmarks", to: "bookmarks#destroy"
   end
   resources :movies
 end

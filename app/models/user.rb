@@ -12,4 +12,8 @@ class User < ApplicationRecord
   VALID_PHONE_REGEX = /\A^(03|09)[0-9]{8}$\z/
   validates :phone, length: {maximum: Settings.user.phone.max_length},
     format: {with: VALID_PHONE_REGEX}
+
+  def bookmarked? movie
+    bookmark_movies.include? movie
+  end
 end
