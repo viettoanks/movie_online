@@ -32,7 +32,8 @@
       </ul>
       <nav class="navbar navbar-light bg-light mr-auto">
         <%= search_form_for @init_ransack, class: "form-inline" do |f| %>
-          <%= f.text_field :name_or_alternative_name_cont, class: "form-control mr-sm-2" %>
+          <%= f.text_field :name_or_alternative_name_or_actors_name_or_directors_name_cont,
+            class: "form-control mr-sm-2" %>
           <%= f.submit t(".search"), class: "btn btn-outline-success my-2 my-sm-0" %>
         <% end %>
       </nav>
