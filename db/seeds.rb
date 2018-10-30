@@ -64,7 +64,7 @@ end
 
 10.times do |n|
   p = Person.create! name: FFaker::Name.name,
-                 gender: [true, false].sample,
+                 gender: [0, 1].sample,
                  birthday: 25.year.ago - n.days,
                  country: FFaker::Address.country,
                  description: FFaker::Lorem.paragraph,

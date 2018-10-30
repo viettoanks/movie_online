@@ -1,6 +1,6 @@
 class Person < ApplicationRecord
   enum role: {actor: 0, director: 1}
-  enum gender: {male: true, female: false}
+  enum gender: {male: 1, female: 0}
 
   has_many :movies_people
   has_many :movies, through: :movies_people

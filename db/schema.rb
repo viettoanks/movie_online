@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_16_033007) do
+ActiveRecord::Schema.define(version: 2018_10_17_081551) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 2018_10_16_033007) do
 
   create_table "people", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.boolean "gender"
+    t.integer "gender"
     t.timestamp "birthday"
     t.string "country"
     t.text "description"

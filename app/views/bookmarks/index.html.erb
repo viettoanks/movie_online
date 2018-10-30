@@ -13,7 +13,7 @@
           <span class="text-center"><%= movie.name %></span>
         <% end %>
         <%= link_to movie_bookmarks_path(movie),
-          class: "btn btn-outline-danger btn-block", method: :post do %>
+          class: "btn btn-outline-danger btn-block", method: :delete do %>
           <span aria-hidden="true" class="h4">&times;</span>
         <% end %>
       </div>
