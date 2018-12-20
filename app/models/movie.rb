@@ -13,6 +13,7 @@ class Movie < ApplicationRecord
   has_many :view_counts, dependent: :destroy
   has_many :episodes, dependent: :destroy
   enum movie_type: {features: 0, series: 1, hots: 2}
+  # mount_uploader :poster, PosterUploader
 
   scope :sort_by_bookmark_desc, ->{order movies_users[:created_at].desc}
   scope :sort_by_publish, ->(type){order publish_date: type}

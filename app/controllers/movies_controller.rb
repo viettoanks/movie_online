@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
     else
       @movies_list = Movie.where(movie_type: params[:movie_type])
                           .page(params[:page])
-                          .per Settings.movies_controller.per_page
+                          .per(18)
     end
   end
 
@@ -40,7 +40,7 @@ class MoviesController < ApplicationController
   end
 
   def find_movie_episodes
-    return if @movie.episodes_size == 1
+    return if @movie.episodes_size == 0
     @episodes = @movie.episodes.order_asc
   end
 end

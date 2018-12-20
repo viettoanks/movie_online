@@ -21,7 +21,7 @@
 <div class="container-fluid mt-3">
   <% [[t(".feature"), @home.features], [t(".series"), @home.series],
     [t(".hot"), @home.hots]].each do |key1, key2| %>
-    <h2><%= key1 %></h2>
+    <h2><%= link_to key1, movies_path(movie_type: Settings.header.movies_feature)%></h2>
     <div class="row">
       <%= render partial: "movies/movie", collection: key2 %>
     </div>
